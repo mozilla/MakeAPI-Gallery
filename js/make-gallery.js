@@ -161,7 +161,7 @@
     if(hidden.indexOf("likes-count") < 0) {
       likeCount = node.querySelector(".make-likes-count");
       likeCount.innerHTML = make.likes.length;
-      if(make.likes.length == 0) {
+      if(make.likes.length === 0) {
         likesWrapper.style.display = "none";
       }
       if(make.likes.length > 2) {
@@ -245,7 +245,9 @@
         itemsPerRow = countRowItems(),
         rowItem = 0,
         currentRow = 1,
-        rowCount = Math.ceil(makeEls.length / itemsPerRow);
+        rowCount = Math.ceil(makeEls.length / itemsPerRow),
+        makeIndex,
+        makeEl;
 
     for(var i = 0; i < rowCount; i++){
 
@@ -253,8 +255,8 @@
 
       //Figure out tallest Make in each row
       for(var j = 0; j < itemsPerRow; j++){
-        var makeIndex = j + (i*itemsPerRow);
-        var makeEl = makeEls[makeIndex];
+        makeIndex = j + (i*itemsPerRow);
+        makeEl = makeEls[makeIndex];
         if(makeEl){
           makeDetails = makeEl.querySelector(".make-details");
           makeDetails.style.height = "";
@@ -267,9 +269,9 @@
 
       //Set each make to the tallest in that row
       tallest = tallest - 50;
-      for(var j = 0; j < itemsPerRow; j++){
-        var makeIndex = j + (i*itemsPerRow);
-        var makeEl = makeEls[makeIndex];
+      for(var k = 0; k < itemsPerRow; k++){
+        makeIndex = k + (i*itemsPerRow);
+        makeEl = makeEls[makeIndex];
         if(makeEl){
           makeEl.querySelector(".make-details").style.height = tallest + "px";
         }
