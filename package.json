@@ -1,6 +1,6 @@
 {
   "name": "MakeAPI-Gallery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JS for generating a gallery of Makes using the MakeAPI",
   "scripts": {
     "test": "grunt test"
