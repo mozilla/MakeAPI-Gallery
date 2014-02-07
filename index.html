@@ -1,0 +1,46 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Make Sample Gallery</title>
+
+    <!-- Add these 3 guys to your page -->
+    <link rel="stylesheet" type="text/css" href="css/make-gallery.css" >
+    <script src="bower_components/makeapi-client/src/make-api.js"></script>
+    <script src="js/0.0.1/make-gallery.js"></script>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="make-gallery"></div>
+    <script type="text/javascript">
+      var gallery = new MakeGallery(
+        {
+          title: "mozfest",
+          limit: 15
+        },
+        {
+          elementSelector: ".make-gallery",
+          hidden: ["details"]
+        });
+    </script>
+  </body>
+</html>
+
+<!--
+// hidden : ["thumbnail","title","created-by","created-at","description","author-picture","tags","remix-button","likes-count"],
+// fallbackThumbnail : "http://i.imgur.com/FgPkC7M.gif"
+// fallbackAvatar : "http://zachbussey.com/wp-content/uploads/2011/02/Cute-Kitten.jpg"
+// backgroundColor: "black"
+// fallbackThumbnail : "http://i.imgur.com/FgPkC7M.gif"
+ -->

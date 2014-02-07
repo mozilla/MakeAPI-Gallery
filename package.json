@@ -1,0 +1,18 @@
+{
+  "name": "MakeAPI-Gallery",
+  "version": "0.0.1",
+  "description": "JS for generating a gallery of Makes using the MakeAPI",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozilla/MakeAPI-Gallery.git"
+  },
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-csslint": "0.2.0",
+    "grunt-contrib-jshint": "0.8.0"
+  }
+}
