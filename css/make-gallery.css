@@ -50,7 +50,7 @@
 }
 
 .make-gallery .default-thumbnail {
-  background-image: url("../../images/webmaker-logo-large.png");
+  background-image: url("../images/webmaker-logo-large.png");
 }
 
 .make-gallery .make-thumbnail:hover {
@@ -180,7 +180,7 @@
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/images/remix-icon.png);
+  background-image: url(../images/remix-icon.png);
   position: absolute;
 }
 

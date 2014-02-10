@@ -1,0 +1,11 @@
+{
+  "name": "makeapi-client",
+  "_cacheHeaders": {
+    "Content-Length": "14694",
+    "Content-Type": "application/x-gzip",
+    "Content-Disposition": "attachment; filename=mozilla-makeapi-client-v0.5.17-0-gcd0578c.tar.gz"
+  },
+  "_source": "https://github.com/mozilla/makeapi-client/tarball/v0.5.17",
+  "_target": "*",
+  "_originalSource": "https://github.com/mozilla/makeapi-client/tarball/v0.5.17"
+}
